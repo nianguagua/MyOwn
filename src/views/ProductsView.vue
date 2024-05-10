@@ -26,6 +26,8 @@ bannerStore.setBannerState(2);
   </div>
 </template>
 <script>
+import { useDemoStateStore } from "../store/demoStore";
+
 export default {
   data() {
     return {
@@ -68,8 +70,11 @@ export default {
       // let arr = ["a", 1, 4, 6, "b", 5, 1, 6, "c", "b"];
       // this.arrFilter(arr);
       //数组排序
-      let arr = [7, 4, 1, 6, 2, 5, 12, 3, 23];
-      this.arrSort(arr);
+      // let arr = [7, 4, 1, 6, 2, 5, 12, 3, 23];
+      // this.arrSort(arr);
+      const demoStore = useDemoStateStore();
+      demoStore.setDemoState(demoStore.num + 1);
+      alert(demoStore.num);
     },
     initData() {
       // this.data = [

@@ -3,6 +3,7 @@
   <EchartCom @someFun="doSomeFun" :charData="data" />
 </template>
 <script>
+import { useDemoStateStore } from "../store/demoStore";
 import EchartCom from "../components/EchartCom.vue";
 export default {
   data() {
@@ -32,7 +33,9 @@ export default {
   },
   methods: {
     doSomeFun: function (param) {
-      debugger;
+      const demoStore = useDemoStateStore();
+      demoStore.setDemoState(888);
+      alert(demoStore.num);
     },
   },
 };
