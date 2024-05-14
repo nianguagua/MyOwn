@@ -19,6 +19,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "node-sass": "^9.0.0",
+    "postcss": "^8.4",
+    "postcss-preset-env": "^9.5.13",
     "sass": "^1.76.0",
     "sass-loader": "^14.2.1",
     "vite": "^5.2.8",

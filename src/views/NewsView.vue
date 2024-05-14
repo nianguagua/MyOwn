@@ -20,6 +20,7 @@ bannerStore.setBannerState(3);
   <div id="box">
     <div class="sbox"></div>
   </div>
+  <RouterView />
 </template>
 
 <script>

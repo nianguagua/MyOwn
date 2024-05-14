@@ -68,7 +68,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 input {
   float: right;
   height: 30px;

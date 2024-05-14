@@ -46,6 +46,7 @@ export default {
     clickHander(data, act) {
       let name = data.name;
       let address = data.address;
+      this.$router.push("/news");
       // console.log("name:" + name + ";address:" + address);
       // console.log("active: " + act);
       //cookie测试
@@ -74,7 +75,7 @@ export default {
       // this.arrSort(arr);
       const demoStore = useDemoStateStore();
       demoStore.setDemoState(demoStore.num + 1);
-      alert(demoStore.num);
+      // alert(demoStore.num);
     },
     initData() {
       // this.data = [

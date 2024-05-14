@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import VueDevTools from "vite-plugin-vue-devtools";
+// const postcssPresetEnv = require("postcss-preset-env");
+import postcssPresetEnv from "postcss-preset-env";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,6 +23,16 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [
+        postcssPresetEnv({
+          /* pluginOptions */
+          features: {},
+        }),
+      ],
     },
   },
 });

@@ -30,7 +30,7 @@ const bannerStore = useBannerStaterStore();
                     >
                   </div>
                   <div class="item">
-                    <RouterLink index="2" to="/products/chanpin"
+                    <RouterLink index="2" to="/products/chanpin/5/10236"
                       >产品设计</RouterLink
                     >
                   </div>
@@ -42,7 +42,11 @@ const bannerStore = useBannerStaterStore();
                   <router-link index="3" to="/news">新闻</router-link>
                 </div>
                 <div class="dropCon">
-                  <div class="item">产业新闻</div>
+                  <div class="item">
+                    <router-link index="3" to="/news/chanyeNews"
+                      >产业新闻</router-link
+                    >
+                  </div>
                   <div class="item">公司新闻</div>
                 </div>
               </li>
@@ -86,7 +90,7 @@ export default {
       let act = e.target.getAttribute("index");
     },
     getUserInfo() {
-      return;
+      console.log("/api/getUserInfo");
       axios({
         method: "post",
         url: "/api/getUserInfo",

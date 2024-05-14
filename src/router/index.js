@@ -9,6 +9,7 @@ import JianZhu from "../views/JianZhu.vue";
 import ChanPin from "../views/ChanPin.vue";
 import NewsView from "../views/NewsView.vue";
 import TuanduiView from "../views/TuanduiView.vue";
+import ChanyeNews from "../views/ChanyeNews.vue";
 // import { usePermissionsStore } from "@/store/routeSet";
 // const permissionsStore = usePermissionsStore();
 let role1Route = [
@@ -27,8 +28,11 @@ let role1Route = [
         component: JianZhu,
       },
       {
-        path: "chanpin",
+        path: "chanpin/:appId/:useId",
         component: ChanPin,
+        // beforeEnter: (to, from) => {
+        //   // return false;
+        // },
       },
     ],
   },
@@ -36,6 +40,12 @@ let role1Route = [
     path: "/news",
     name: "news",
     component: NewsView,
+    children: [
+      {
+        path: "chanyeNews",
+        component: ChanyeNews,
+      },
+    ],
   },
   {
     path: "/tuandui",
