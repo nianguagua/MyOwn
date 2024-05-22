@@ -10,6 +10,7 @@ import ChanPin from "../views/ChanPin.vue";
 import NewsView from "../views/NewsView.vue";
 import TuanduiView from "../views/TuanduiView.vue";
 import ChanyeNews from "../views/ChanyeNews.vue";
+import GongsiNews from "../views/GongsiNews.vue";
 // import { usePermissionsStore } from "@/store/routeSet";
 // const permissionsStore = usePermissionsStore();
 let role1Route = [
@@ -44,6 +45,10 @@ let role1Route = [
       {
         path: "chanyeNews",
         component: ChanyeNews,
+      },
+      {
+        path: " ",
+        component: GongsiNews,
       },
     ],
   },

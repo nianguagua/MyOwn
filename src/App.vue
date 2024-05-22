@@ -47,7 +47,11 @@ const bannerStore = useBannerStaterStore();
                       >产业新闻</router-link
                     >
                   </div>
-                  <div class="item">公司新闻</div>
+                  <div class="item">
+                    <router-link index="3" to="/news/gongsiNews"
+                      >公司新闻</router-link
+                    >
+                  </div>
                 </div>
               </li>
               <li>
