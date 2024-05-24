@@ -6,6 +6,7 @@ bannerStore.setBannerState(2);
 </script>
 <template>
   <div id="product">
+    <div style="display: flex">123</div>
     <el-table :data="data" stripe style="width: 100%">
       <el-table-column prop="date" label="日期" width="180"> </el-table-column>
       <el-table-column prop="name" label="姓名" width="180"> </el-table-column>
