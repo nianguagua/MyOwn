@@ -1,1 +1,0 @@
-import{o as s,c as e,w as r,i as t,d as a}from"./index-ClOZnmWs.js";import{_ as o}from"./_plugin-vue_export-helper.BCo6x5W8.js";const n=o({data:()=>({}),methods:{}},[["render",function(o,n,u,d,i,l){const p=t;return s(),e(p,null,{default:r((()=>[a(" users ")])),_:1})}]]);export{n as default};
